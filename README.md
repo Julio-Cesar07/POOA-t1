@@ -34,6 +34,6 @@ public class Imprimir {
     }
     
     public void emprestar_livro(Livro livro){
-          livro.mprestimo = 1; #Livro emprestado
+          livro.emprestimo = 1; #Livro emprestado
     }
  }
