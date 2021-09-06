@@ -1,0 +1,21 @@
+struct livro {
+  emprestimo = 0;
+  ...
+} Livro;
+
+public class Imprimir {
+    public void imprimir_livros(Livro livro){
+          printf("%s", livro.dados);
+    }
+    
+ }
+ 
+ public class Manuseio_livro {
+    public void devolver_livro(Livro livro){
+          livro.emprestimo = 0; #Livro devolvido
+    }
+    
+    public void emprestar_livro(Livro livro){
+          livro.mprestimo = 1; #Livro emprestado
+    }
+}
