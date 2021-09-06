@@ -15,6 +15,34 @@ Serão discutidos também exemplos de um programa construído sem a utilização
 	O SRP é importante também para manter a coesão em códigos de programação. A coesão é definida como a afinidade funcional entre os elementos de um módulo, ou seja, é a relação que os métodos de uma classe possuem entre si. Para mantermos um código coeso, é necessário que cada classe não realize as responsabilidades que não são suas. Assim, podemos manter a simplicidade do nosso código e facilitar seu entendimento, além de tornar mais fácil encontrar e resolver erros.
 </p>
 
+## Aplicação
+<p align="justify">Aplicação
+	No exemplo 1 podemos ver o código para um sistema de biblioteca:
+</p>
+
+~~~C++
+struct livro {
+  emprestimo = 0; </br>
+  ...
+} Livro;
+
+public class Biblioteca {
+    public void emprestar_livro(Livro livro){
+          livro.mprestimo = 1; #Livro emprestado
+    }
+    
+    public void devolver_livro(Livro livro){
+          livro.emprestimo = 0; #Livro devolvido
+    }
+    
+    public void imprimir_livros(Livro livro){
+          printf("%s", livro.dados);
+    }
+}
+~~~
+
+
+
 ~~~~C++
 struct livro {
   emprestimo = 0;
@@ -34,6 +62,6 @@ public class Imprimir {
     }
     
     public void emprestar_livro(Livro livro){
-          livro.emprestimo = 1; #Livro emprestado
+          livro.mprestimo = 1; #Livro emprestado
     }
  }
