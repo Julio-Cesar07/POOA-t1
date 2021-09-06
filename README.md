@@ -28,7 +28,7 @@ struct livro {
 
 public class Biblioteca {
     public void emprestar_livro(Livro livro){
-          livro.mprestimo = 1; #Livro emprestado
+          livro.emprestimo = 1; #Livro emprestado
     }
     
     public void devolver_livro(Livro livro){
