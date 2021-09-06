@@ -1,7 +1,7 @@
 struct livro {
-  emprestimo = 0;
+  emprestimo = 0; </br>
   ...
-}Livro;
+} Livro;
 
 public class Biblioteca {
     public void emprestar_livro(Livro livro){
