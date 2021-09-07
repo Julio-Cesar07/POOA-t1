@@ -70,8 +70,8 @@ public class Imprimir {
  }
 ~~~
 <p align="center">Exemplo 2</p></br>
-<p align="justify">Agora temos duas classes. A classe “Imprimir” manteve o método “imprimir_livros”, ela se torna assim unicamente responsável por exibir os dados do livro cadastrado. Já a classe “Manuseio_livro” adotou os métodos “devolver_livro” e “emprestar_livro”, sendo então responsável por realizar a retirada e manuseio dos livros da biblioteca. Dessa forma o código se tornou mais coeso e de fácil manutenção. Ao realizar alteração nos métodos de empréstimo, por exemplo, já não temos mais que nos preocupar em afetar a função de imprimir.
-	É importante notar que os métodos para emprestar e devolver livros são diferentes, porém realizam a mesma função. Assim, ao se aplicar o SRP, ambos os métodos pertencem à mesma classe. Isso deve ser frisado, pois um erro comum é se confundir nas responsabilidades de cada método. Muitas vezes isso leva à implementação errada do conceito, criando códigos com classes que deveriam estar juntas, pois são utilizadas em conjunto, possuem a mesma função ou são altamente coesas. 
+<p align="justify">Agora temos duas classes. A classe “Imprimir” manteve o método “imprimir_livros”, ela se torna assim unicamente responsável por exibir os dados do livro cadastrado. Já a classe “Manuseio_livro” adotou os métodos “devolver_livro” e “emprestar_livro”, sendo então responsável por realizar a retirada e manuseio dos livros da biblioteca. Dessa forma o código se tornou mais coeso e de fácil manutenção. Ao realizar alteração nos métodos de empréstimo, por exemplo, já não temos mais que nos preocupar em afetar a função de imprimir.</p>
+<p align="justify">É importante notar que os métodos para emprestar e devolver livros são diferentes, porém realizam a mesma função. Assim, ao se aplicar o SRP, ambos os métodos pertencem à mesma classe. Isso deve ser frisado, pois um erro comum é se confundir nas responsabilidades de cada método. Muitas vezes isso leva à implementação errada do conceito, criando códigos com classes que deveriam estar juntas, pois são utilizadas em conjunto, possuem a mesma função ou são altamente coesas. 
 </p>
 
 ## Conclusão
