@@ -10,9 +10,9 @@ Serão discutidos também exemplos de um programa construído sem a utilização
 </p>
 
 ## Conceito
-<p align="justify"> O Princípio da Responsabilidade Única diz que, em programação orientada a objetos, uma classe deve ter apenas uma única razão para mudar. Isso significa que cada classe deve possuir apenas uma tarefa, uma especialidade.
-	A importância do SRP se deve ao chamado “acoplamento”. Quando as classes em um programa não são especializadas, diz-se que elas possuem um alto acoplamento. Isso significa que os métodos dessa classe podem ser altamente dependentes entre si, o que pode trazer dificuldades nos momentos de realizar alterações à classe. Realizar mudanças no código de classes altamente acopladas pode trazer diversos resultados inesperados, já que diferentes métodos da classe podem estar utilizando do mesmo atributo ou serem dependentes um do outro.
-	O SRP é importante também para manter a coesão em códigos de programação. A coesão é definida como a afinidade funcional entre os elementos de um módulo, ou seja, é a relação que os métodos de uma classe possuem entre si. Para mantermos um código coeso, é necessário que cada classe não realize as responsabilidades que não são suas. Assim, podemos manter a simplicidade do nosso código e facilitar seu entendimento, além de tornar mais fácil encontrar e resolver erros.
+<p align="justify"> O Princípio da Responsabilidade Única diz que, em programação orientada a objetos, uma classe deve ter apenas uma única razão para mudar. Isso significa que cada classe deve possuir apenas uma tarefa, uma especialidade.</p>
+<p align="justify"> A importância do SRP se deve ao chamado “acoplamento”. Quando as classes em um programa não são especializadas, diz-se que elas possuem um alto acoplamento. Isso significa que os métodos dessa classe podem ser altamente dependentes entre si, o que pode trazer dificuldades nos momentos de realizar alterações à classe. Realizar mudanças no código de classes altamente acopladas pode trazer diversos resultados inesperados, já que diferentes métodos da classe podem estar utilizando do mesmo atributo ou serem dependentes um do outro.</p>
+<p align="justify"> O SRP é importante também para manter a coesão em códigos de programação. A coesão é definida como a afinidade funcional entre os elementos de um módulo, ou seja, é a relação que os métodos de uma classe possuem entre si. Para mantermos um código coeso, é necessário que cada classe não realize as responsabilidades que não são suas. Assim, podemos manter a simplicidade do nosso código e facilitar seu entendimento, além de tornar mais fácil encontrar e resolver erros.
 </p>
 
 ## Aplicação
@@ -41,9 +41,9 @@ public class Biblioteca {
 ~~~
 
 <p align="center">Exemplo 1</p></br>
-<p align="justify">No código desse sistema temos uma única classe “Biblioteca” com três métodos. O primeiro método, “emprestar_livro”, realiza um empréstimo, alterando os atributos do livro para indicar que ele foi emprestado. No método “devolver_livro” vemos o comportamento oposto, ele altera o valor do atributo “emprestimo” para indicar que o cliente devolveu um livro que havia sido emprestado. O último método, “imprimir_livros”, imprime os dados de um livro.
-	Podemos ver que esse programa não segue o conceito do SRP. Os métodos da classe “Biblioteca” possuem responsabilidades diferentes. Enquanto os dois primeiros métodos são responsáveis pela retirada e manipulação de livros na biblioteca, o último método é responsável por mostrar as informações de um livro.
-	Para manter a coesão de nosso código e diminuir o acoplamento, podemos dividir essa classe em duas novas classes diferentes, cada uma assumindo uma das responsabilidades descritas previamente. Podemos ver isso no exemplo 2.
+<p align="justify">No código desse sistema temos uma única classe “Biblioteca” com três métodos. O primeiro método, “emprestar_livro”, realiza um empréstimo, alterando os atributos do livro para indicar que ele foi emprestado. No método “devolver_livro” vemos o comportamento oposto, ele altera o valor do atributo “emprestimo” para indicar que o cliente devolveu um livro que havia sido emprestado. O último método, “imprimir_livros”, imprime os dados de um livro.</p>
+<p align="justify">Podemos ver que esse programa não segue o conceito do SRP. Os métodos da classe “Biblioteca” possuem responsabilidades diferentes. Enquanto os dois primeiros métodos são responsáveis pela retirada e manipulação de livros na biblioteca, o último método é responsável por mostrar as informações de um livro.</p>
+<p align="justify">Para manter a coesão de nosso código e diminuir o acoplamento, podemos dividir essa classe em duas novas classes diferentes, cada uma assumindo uma das responsabilidades descritas previamente. Podemos ver isso no exemplo 2.
 </p></br></br>
 
 ~~~C++
