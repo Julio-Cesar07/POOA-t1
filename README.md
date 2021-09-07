@@ -16,9 +16,8 @@ Serão discutidos também exemplos de um programa construído sem a utilização
 </p>
 
 ## Aplicação
-<p align="justify">Aplicação
-	No exemplo 1 podemos ver o código para um sistema de biblioteca:
-</p>
+No exemplo 1 podemos ver o código para um sistema de biblioteca:
+
 
 ~~~C++
 struct livro {
@@ -41,9 +40,13 @@ public class Biblioteca {
 }
 ~~~
 
+<p align="center">Exemplo 1</p></br>
+<p align="justify">No código desse sistema temos uma única classe “Biblioteca” com três métodos. O primeiro método, “emprestar_livro”, realiza um empréstimo, alterando os atributos do livro para indicar que ele foi emprestado. No método “devolver_livro” vemos o comportamento oposto, ele altera o valor do atributo “emprestimo” para indicar que o cliente devolveu um livro que havia sido emprestado. O último método, “imprimir_livros”, imprime os dados de um livro.
+	Podemos ver que esse programa não segue o conceito do SRP. Os métodos da classe “Biblioteca” possuem responsabilidades diferentes. Enquanto os dois primeiros métodos são responsáveis pela retirada e manipulação de livros na biblioteca, o último método é responsável por mostrar as informações de um livro.
+	Para manter a coesão de nosso código e diminuir o acoplamento, podemos dividir essa classe em duas novas classes diferentes, cada uma assumindo uma das responsabilidades descritas previamente. Podemos ver isso no exemplo 2.
+</p></br></br>
 
-
-~~~~C++
+~~~C++
 struct livro {
   emprestimo = 0;
   ...
@@ -65,3 +68,12 @@ public class Imprimir {
           livro.mprestimo = 1; #Livro emprestado
     }
  }
+~~~
+<p align="center">Exemplo 2</p></br>
+<p align="justify">Agora temos duas classes. A classe “Imprimir” manteve o método “imprimir_livros”, ela se torna assim unicamente responsável por exibir os dados do livro cadastrado. Já a classe “Manuseio_livro” adotou os métodos “devolver_livro” e “emprestar_livro”, sendo então responsável por realizar a retirada e manuseio dos livros da biblioteca. Dessa forma o código se tornou mais coeso e de fácil manutenção. Ao realizar alteração nos métodos de empréstimo, por exemplo, já não temos mais que nos preocupar em afetar a função de imprimir.
+	É importante notar que os métodos para emprestar e devolver livros são diferentes, porém realizam a mesma função. Assim, ao se aplicar o SRP, ambos os métodos pertencem à mesma classe. Isso deve ser frisado, pois um erro comum é se confundir nas responsabilidades de cada método. Muitas vezes isso leva à implementação errada do conceito, criando códigos com classes que deveriam estar juntas, pois são utilizadas em conjunto, possuem a mesma função ou são altamente coesas. 
+</p>
+
+## Conclusão
+<p align="justify">O Princípio da Responsabilidade Única é um importante método para manter um programa enxuto e de fácil manutenção. Apesar de ser um conceito simples, é importante se atentar à coesão para não realizar alterações erradas. Devemos pensar maneira simples para garantir que não estamos fazendo alterações desnecessárias.
+</p>
