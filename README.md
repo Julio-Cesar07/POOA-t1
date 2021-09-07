@@ -77,3 +77,9 @@ public class Imprimir {
 ## Conclusão
 <p align="justify">O Princípio da Responsabilidade Única é um importante método para manter um programa enxuto e de fácil manutenção. Apesar de ser um conceito simples, é importante se atentar à coesão para não realizar alterações erradas. Devemos pensar maneira simples para garantir que não estamos fazendo alterações desnecessárias.
 </p>
+</br></br>
+
+## Referências
+<p align="justify">
+Robert Martin, Micah Martin, Princípios, Padrões e Práticas Ágeis em C#,  Bookman Editora, 2009.
+</p>
